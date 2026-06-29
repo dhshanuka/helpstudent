@@ -1,0 +1,22 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model StudentSubmission {
+  id                 Int      @id @default(autoincrement())
+  registrationNumber Int      @unique
+  idNumber           String   @unique
+  fullName           String
+  issueDescription   String
+  createdAt          DateTime @default(now())
+}
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String // hashed
+}
