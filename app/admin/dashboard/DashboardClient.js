@@ -83,7 +83,7 @@ export default function DashboardClient({ submissions, session }) {
             </div>
             <button
               onClick={() => logoutAdminAction()}
-              className="btn btn-sm btn-outline tracking-wider flex items-center gap-1.5 uppercase rounded-xl border-zinc-700 hover:bg-white hover:text-black transition-all duration-300 font-mono text-xs"
+              className="btn btn-sm bg-transparent border border-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-900/60 hover:border-zinc-700 tracking-wider flex items-center gap-1.5 uppercase rounded-xl transition-all duration-300 font-mono text-xs cursor-pointer"
             >
               <LogOut className="w-3.5 h-3.5" />
               Sign Out
@@ -218,7 +218,7 @@ export default function DashboardClient({ submissions, session }) {
                       <td className="px-6 py-4 text-center">
                         <button
                           onClick={() => setSelectedSubmission(sub)}
-                          className="btn btn-xs btn-outline rounded-xl font-bold font-mono tracking-wider border-zinc-700 text-zinc-300 hover:bg-white hover:text-black hover:border-white transition-all"
+                          className="btn btn-xs bg-transparent border border-zinc-800 text-zinc-350 hover:text-white hover:bg-zinc-900/60 hover:border-zinc-700 rounded-xl font-bold font-mono tracking-wider transition-all cursor-pointer"
                         >
                           <Eye className="w-3.5 h-3.5" />
                           Inspect
@@ -310,7 +310,7 @@ export default function DashboardClient({ submissions, session }) {
             <div className="p-4 bg-zinc-950/40 border-t border-zinc-800/60 flex justify-end">
               <button
                 onClick={() => setSelectedSubmission(null)}
-                className="btn btn-sm bg-zinc-900 border-zinc-800 hover:bg-zinc-800 text-zinc-300 px-4 rounded-xl tracking-widest font-mono text-[10px]"
+                className="btn btn-sm bg-zinc-900 hover:bg-zinc-850 text-white border border-zinc-800 hover:border-zinc-700 px-5 rounded-xl tracking-widest font-mono text-[10px] cursor-pointer transition-all active:scale-[0.98]"
               >
                 Close Report
               </button>

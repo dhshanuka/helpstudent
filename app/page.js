@@ -99,7 +99,7 @@ export default function StudentSubmissionPage() {
         <div className="mt-4 sm:mt-0 flex items-center gap-4">
           <Link 
             href="/admin/login" 
-            className="btn btn-sm btn-outline tracking-wider flex items-center gap-2 uppercase rounded-xl border-zinc-700 hover:bg-white hover:text-black transition-all duration-300 hover:border-white font-mono text-xs"
+            className="btn btn-sm bg-transparent border border-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-900/60 hover:border-zinc-700 tracking-wider flex items-center gap-2 uppercase rounded-xl transition-all duration-300 font-mono text-xs cursor-pointer"
           >
             <ShieldAlert className="w-3.5 h-3.5" />
             Office Login

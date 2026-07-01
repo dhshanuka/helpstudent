@@ -19,7 +19,7 @@ export default function AdminLoginPage() {
       <header className="max-w-4xl w-full mx-auto flex items-center justify-between mb-8 animate-fade-in-up">
         <Link 
           href="/" 
-          className="btn btn-sm btn-outline tracking-wider flex items-center gap-1.5 uppercase rounded-xl border-zinc-700 hover:bg-white hover:text-black transition-all duration-300 font-mono text-xs"
+          className="btn btn-sm bg-transparent border border-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-900/60 hover:border-zinc-700 tracking-wider flex items-center gap-1.5 uppercase rounded-xl transition-all duration-300 font-mono text-xs cursor-pointer"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           Student Portal
