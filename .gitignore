@@ -42,4 +42,3 @@ next-env.d.ts
 
 # sqlite
 prisma/*.db*
-!prisma/dev.db
