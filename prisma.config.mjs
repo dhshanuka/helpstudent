@@ -1,9 +1,15 @@
-import { defineConfig } from "prisma/config";
+import { defineConfig, env } from "prisma/config";
+
+try {
+  process.loadEnvFile();
+} catch (e) {
+  // Fallback if loadEnvFile is not supported or .env is not present
+}
 
 export default defineConfig({
   schema: "prisma/schema.prisma",
   datasource: {
-    url: process.env.DATABASE_URL || "postgresql://postgres:postgres@localhost:5432/helpstudent",
+    url: env("DATABASE_URL"),
   },
   migrations: {
     seed: "node prisma/seed.js",

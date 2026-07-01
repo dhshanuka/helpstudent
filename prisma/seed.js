@@ -3,6 +3,10 @@ const { PrismaPg } = require('@prisma/adapter-pg');
 const pg = require('pg');
 const bcrypt = require('bcryptjs');
 
+try {
+  process.loadEnvFile();
+} catch (e) {}
+
 const connectionString = process.env.DATABASE_URL;
 const pool = new pg.Pool({ connectionString });
 const adapter = new PrismaPg(pool);
