@@ -7,9 +7,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full">
-      <body className="min-h-full flex flex-col antialiased">
-        {children}
+    <html lang="en" className="h-full dark">
+      <body className="min-h-full flex flex-col antialiased relative overflow-x-hidden">
+        {/* Decorative background glow rings */}
+        <div className="bg-glow-purple top-0 left-0" />
+        <div className="bg-glow-blue bottom-0 right-0" />
+        
+        <div className="relative z-10 flex-1 flex flex-col">
+          {children}
+        </div>
       </body>
     </html>
   );
